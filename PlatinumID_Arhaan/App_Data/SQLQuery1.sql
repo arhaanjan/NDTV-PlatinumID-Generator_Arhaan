@@ -1,0 +1,14 @@
+﻿CREATE TABLE data(
+Sno INT IDENTITY(1,1) PRIMARY KEY,
+SName Varchar(120),
+State Varchar(120),
+Type Varchar(120),
+Status Varchar(120),
+GenAt DATETIME DEFAULT GETDATE())
+ALTER TABLE data
+ADD PlatID VArchar(120);
+SELECT * FROM data
+DELETE FROM data
+TRUNCATE TABLE data
+UPDATE data SET PlatID = 421 WHERE PlatID = 420
+
